@@ -29,15 +29,15 @@ This repo includes a Dockerfile for simple deployment. To run, use the following
 1. Install Docker (https://docs.docker.com/install/)
 2. Start Docker Daemon
 3. Enter the directory
-4. Run: `run_web_docker`
+4. Run: ``run_web_docker``
 
 From FileSystem
 ----------------
 
 1. Install python 3.6+ 
 2. Download contents of this repo and enter directory
-3. Run  `install --no-cache-dir -r requirements.txt`
-4. Run `python docsend_scraper_web`
+3. Run  ``install --no-cache-dir -r requirements.txt``
+4. Run ``python docsend_scraper_web``
 
 ,,,,,,,,,
 Docs
