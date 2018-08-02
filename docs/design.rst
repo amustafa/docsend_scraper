@@ -26,3 +26,6 @@ Parts of a Scrape
 
 
 
+Web UI
+------
+The web ui works on the total task in very discrete chunks. This allows for load balancing if the need would ever arise.
