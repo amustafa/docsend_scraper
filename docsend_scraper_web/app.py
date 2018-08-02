@@ -40,7 +40,8 @@ def is_valid_doc_id(doc_id):
 @app.route('/get_document_info/<doc_id>')
 async def get_document_info(request, doc_id):
     doc_info = await docsend_scraper.gather_document_info(doc_id)
-    del doc_info['html']
+    if 'html' in doc_info:
+        del doc_info['html']
     print(doc_id, doc_info)
     global DOC_INFO_CACHE
     DOC_INFO_CACHE[doc_id] = doc_info
