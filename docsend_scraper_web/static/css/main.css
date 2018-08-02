@@ -1,0 +1,108 @@
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
+ nav.affix-top .navbar-add-button{
+     display: none;
+ }
+
+
+div.doc-info-panel-right{
+     display: inline-block;
+     width: 20%;
+     text-align:center;
+ }
+div.doc-info-panel-right > div{
+     min-height:75px;
+ }
+
+
+div.doc-info-panel-left{
+     display: inline-block;
+     width: 80%;
+ }
+
+div.doc-info-panel-left > div{
+    paddding: 10px
+ }
+
+
+ div.doc-download-panel div.doc-info-panel-right i{
+     display: none;
+ }
+
+ div.doc-download-panel input{
+     display: none;
+ }
+
+ div.doc-download-panel[data-doc-status="attention"] input,
+ div.doc-download-panel[data-doc-status="error"] input,
+ div.doc-download-panel[data-doc-status="download"] input{
+     display: inline-block;
+ }
+
+ div.doc-download-panel span{
+     display: none;
+ }
+
+ div.doc-download-panel[data-doc-status="downloading"] span,
+ div.doc-download-panel[data-doc-status="complete"] span{
+     display: inline-block;
+ }
+
+ div.doc-download-panel[data-doc-status="downloading"] div.doc-info-panel-right i.fa-spinner{
+     display: inline-block;
+     color: gray;
+
+ }
+
+ div.doc-download-panel[data-doc-status="download"] div.doc-info-panel-right i.fa-arrow-alt-circle-down{
+     display: inline-block;
+     color: #007bff;
+ }
+
+ div.doc-download-panel[data-doc-status="attention"] div.doc-info-panel-right i.fa-exclamation-circle{
+     display: inline-block;
+     color:#ffae42;
+ }
+
+ div.doc-download-panel[data-doc-status="error"] div.doc-info-panel-right i.fa-exclamation-circle{
+     display: inline-block;
+     color: red;
+ }
+ 
+ div.doc-download-panel[data-doc-status="invalid"] div.doc-info-panel-right i.fa-exclamation-circle{
+     display: inline-block;
+     color:red;
+ }
+
+ div.doc-download-panel[data-doc-status="complete"] div.doc-info-panel-right i.fa-check-circle{
+     display: inline-block;
+     color:green;
+ }
+.pulse {
+	-webkit-animation: pulse linear 2s infinite;
+	animation: pulse linear 2s infinite;
+}
+@-webkit-keyframes pulse {
+	0% {  } 
+	20% { font-size:4.5em; } 
+	40% { font-size: 4em; }
+	60% { font-size: 4em; }
+	80% { font-size:4.5em; } 
+	100% { } 
+}
+@keyframes pulse {
+	0% { } 
+	20% { font-size:4.5em; } 
+	50% { font-size: 4em; }
+	80% { font-size:4.5em; } 
+	100% { } 
+}

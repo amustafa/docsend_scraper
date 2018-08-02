@@ -1,0 +1,6 @@
+sanic
+reportlab
+requests
+aiohttp
+jinja2
+Pillow

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block page_title %}DocSend PDF Downloader{% endblock %}
+{% block main_content %}
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="#page-top">DocSend Scraper</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="nav navbar-nav navbar-right navbar-add-button">
+                        <a href="#page-top">
+                            <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-plus"></i></button>
+                        </a>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Enter documents to download</div>
+                <div class="">Enter Url or ID. One document per line</div>
+                    <form  id="document_entry" novalidate>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Enter Doc ID or URL" id="document-entry" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <a href="#downloads" id="initiate-download-button" class="page-scroll btn btn-xl">
+                                    <i class="fas fa-cloud-download-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="downloads">
+        <div class="container">
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; None: Use at your own will.</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://linkedin.com/in/amustafa2011"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
