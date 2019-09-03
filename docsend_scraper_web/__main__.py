@@ -7,7 +7,7 @@ sys.path.append(os.path.join(__root_location__, '..'))
 
 from app import app
 if 'PORT' in os.environ:
-    post = os.environ['PORT']
+    port = os.environ['PORT']
 else:
     port = 8000
 
