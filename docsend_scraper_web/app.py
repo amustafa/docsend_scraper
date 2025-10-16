@@ -15,7 +15,7 @@ TEMPLATES_FOLDER = os.path.join(__root_location__, 'templates')
 _templateLoader = jinja2.FileSystemLoader(searchpath=TEMPLATES_FOLDER)
 templateEnv = jinja2.Environment(loader=_templateLoader)
 
-app = Sanic()
+app = Sanic('docsend')
 app.static('/js', os.path.join(__root_location__, 'static/js'))
 app.static('/img', os.path.join(__root_location__, 'static/img'))
 app.static('/css', os.path.join(__root_location__, 'static/css'))
